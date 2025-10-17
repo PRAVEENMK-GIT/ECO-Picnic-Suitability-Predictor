@@ -15,7 +15,6 @@ COPY . .
 EXPOSE 5000
 
 # Set environment variable for Flask
-ENV FLASK_APP=api.py
 
 # Run the Flask API
-CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]
+CMD ["python", "api.py"]
